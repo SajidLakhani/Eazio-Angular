@@ -1,0 +1,197 @@
+.header {
+    padding: 20px;
+}
+
+.nav-elements li {
+    font-size: 12px;
+    color: var(--dashboardNavBarItemsColor);
+    padding: unset;
+    font-weight: bold;
+    margin: auto 0;
+
+}
+
+.search-icon {
+    position: absolute;
+    left: 28px;
+    top: 10px;
+    width: 25px;
+}
+
+.search-arrow-icon {
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    width: 20px;
+}
+
+.search-field {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 12px 50px;
+    font-weight: bold;
+    color: #ADB8CC;
+    margin: auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search-field::placeholder {
+    font-size: 12px;
+    color: #ADB8CC;
+    font-weight: unset;
+}
+
+.user-name {
+    font-size: 13px;
+    color: #6B7A99;
+    font-weight: bold;
+    margin: auto 15px;
+}
+
+.round-img {
+    width: 50px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+}
+
+.content-scetion {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.user-email {
+    color: #ADB8CC;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.options ul {
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    border: 1px solid #edeff2;
+    width: 50%;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    padding: 30px 0;
+}
+
+.options .active {
+    z-index: 2 !important;
+    transform: scale(1.2);
+    background-color: #fff;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    transform-origin: center;
+}
+
+.main-content {
+    border: 1px solid #edeff2;
+    margin: 30px 0;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.content-head ul {
+    padding: 0;
+}
+
+.content-head li {
+    display: flex;
+    padding: unset;
+
+}
+
+.content-head p {
+    color: #7D8FB3;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.active-task {
+    color: #3361FF !important;
+}
+
+hr {
+    color: #edeff2;
+    height: 2px;
+}
+
+.bread-crums p {
+    margin: 0;
+    padding: 0;
+    color: #4D5E80;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.arrow-img {
+    margin: auto 0;
+    width: 20px;
+    margin-top: 0px;
+}
+
+.task-creation p {
+    font-size: 12px;
+    margin-left: 20px;
+    padding: 0;
+    color: #4D5E80;
+    font-weight: bold;
+}
+
+.task-creation input, textarea {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-weight: bold;
+    color: #ADB8CC;
+    margin: auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+::placeholder {
+    font-size: 12px;
+    color: #ADB8CC;
+    font-weight: unset;
+}
+
+.sub-task {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 20px 0;
+    font-weight: bold;
+    color: #ADB8CC;
+    margin: auto 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sub-task input {
+    box-shadow: unset;
+}
+
+.btn-save {
+    width: fit-content;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #3361FF;
+    color: #fff;
+    margin-left: 10px;
+}

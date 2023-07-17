@@ -1,0 +1,278 @@
+<div class="header">
+    <div class="row">
+        <div class="col-lg-2 d-flex gap-2">
+            <img class="round-img my-auto" src='../../../../assets/images/burger.png' />
+            <img class="my-auto logo" src='../../../../assets/images/Logo.png' />
+        </div>
+        <div class="col-lg-4 my-auto">
+            <ul class="my-auto nav-elements">
+                <li>Dashboard</li>
+                <li>About Us</li>
+                <li>News</li>
+                <li>User Policy</li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="position-relative col-lg-3 my-auto">
+            <img class="search-icon" src="../../../assets/images/search.png" />
+            <input class="search-field" placeholder="Search Transactions and Documents" />
+            <img class="search-arrow-icon" src="../../../assets/images/serachArrow.png" />
+        </div>
+        <div class="col-lg-2 my-auto d-flex justify-content-end">
+            <div class="d-flex my-auto">
+                <img src="../../../assets/images/Icon.png" class="my-auto" />
+                <p class="user-name my-auto">Alfred Bryant</p>
+            </div>
+            <img class="round-img my-auto" src='../../../../assets/images/Notification.png' />
+            <img class="round-img my-auto" src='../../../../assets/images/Button.png' />
+        </div>
+    </div>
+    <div class="side-nav-bar row">
+        <div class="col-lg-1 mt-2">
+            <div>
+                <img class="round-img my-2" src="../../../assets/images/location.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/star.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/messages.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/growth.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/earth.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/building.png" />
+            </div>
+            <div>
+                <img class="round-img my-2" src="../../../assets/images/Avatar1.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/Avatar2.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/Avatar3.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/Avatar4.png" />
+                <br />
+                <img class="round-img my-2" src="../../../assets/images/Avatar5.png" />
+            </div>
+        </div>
+        <div class="col-lg-11 content-scetion">
+            <div class="row">
+                <div class="col-lg-3 p-5 text-center">
+                    <div class="d-flex justify-content-between">
+                        <img class="round-img my-2" src="../../../assets/images/person.png" />
+                        <img class="round-img my-2" src="../../../assets/images/dots.png" />
+                    </div>
+                    <div class="user-section">
+                        <img style="width: 150px;" src="../../../assets/images/User.png" />
+                        <p class="user-name">Hello Alfred Bryant</p>
+                        <p class="user-email">adrain.nader@yahoo.com</p>
+                    </div>
+                    <div class="options d-flex flex-wrap">
+                        <!-- <img src="../../../assets/images/1.png" />
+                        <img class="active" src="../../../assets/images/2.png" />
+                        <img src="../../../assets/images/3.png" />
+                        <img src="../../../assets/images/4.png" />
+                        <img src="../../../assets/images/5.png" />
+                        <img src="../../../assets/images/1.png" />
+                        <img src="../../../assets/images/2.png" /> -->
+                        <ul class="d-flex flex-wrap position-relative mt-4">
+                            <li [ngClass]="{'active': activeElement === 1}" (click)="setActiveElement(1)">
+                                <img src="../../../assets/images/dashboard.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Dashboard</p>
+                            </li>
+                            <!-- <li><img src="../../../assets/images/1.png" /></li>
+                            <li><img src="../../../assets/images/2.png" /></li> -->
+                            <li [ngClass]="{'active': activeElement === 2}" (click)="setActiveElement(2)">
+                                <img src="../../../assets/images/task.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Tasks</p>
+                            </li>
+                            <li [ngClass]="{'active': activeElement === 3}" (click)="setActiveElement(3)"> <img
+                                    src="../../../assets/images/invoice.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Invoice</p>
+                            </li>
+                            <li [ngClass]="{'active': activeElement === 4}" (click)="setActiveElement(4)">
+                                <img src="../../../assets/images/teams.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Teams</p>
+                            </li>
+                            <li [ngClass]="{'active': activeElement === 5}" (click)="setActiveElement(5)">
+                                <img src="../../../assets/images/files.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Files</p>
+                            </li>
+                            <li [ngClass]="{'active': activeElement === 6}" (click)="setActiveElement(6)">
+                                <img src="../../../assets/images/events.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Events</p>
+                            </li>
+                            <li [ngClass]="{'active': activeElement === 7}" (click)="setActiveElement(7)">
+                                <img src="../../../assets/images/message.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Message</p>
+                            </li>
+                            <li [ngClass]="{'active': activeElement === 8}" (click)="setActiveElement(8)">
+                                <img src="../../../assets/images/settings.png" />
+                                <p style="    padding: 0;
+                                margin: auto;
+                                font-size: 12px;
+                                color: #ADB8CC;
+                                margin-top: 10px;">Settings</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 main-content">
+                    <div class="content-head row justify-content-between">
+                        <div class="col-lg-9 my-auto">
+                            <ul class="my-auto">
+                                <li class="my-auto">
+                                    <img class="my-auto" src="../../../assets/images/task.png" />
+                                    <p class="my-auto active-task">List Task</p>
+                                </li>
+                                <li class="my-auto">
+                                    <img class="my-auto" src="../../../assets/images/dashboard.png" />
+                                    <p class="my-auto">Boards</p>
+                                </li>
+                                <li class="my-auto">
+                                    <img class="my-auto" src="../../../assets/images/calender.png" />
+                                    <p class="my-auto">Calender</p>
+                                </li>
+                                <li class="my-auto">
+                                    <img class="my-auto" src="../../../assets/images/lines.png" />
+                                    <p class="my-auto">Gantt</p>
+                                </li>
+                                <li class="my-auto">
+                                    <img class="my-auto" src="../../../assets/images/timeline.png" />
+                                    <p class="my-auto">Timeline</p>
+                                </li>
+                                <li class="my-auto">
+                                    <img class="my-auto" src="../../../assets/images/activity.png" />
+                                    <p class="my-auto">Activity</p>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="col-lg-1">
+                        </div> -->
+                        <div class="col-lg-3 my-auto position-relative">
+                            <img class="search-icon" src="../../../assets/images/search.png" />
+                            <input class="search-field" placeholder="Search Tasks" />
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bread-crums d-flex gap-3 mx-3 my-3">
+                        <p>Space</p>
+                        <img class="arrow-img" src="../../../assets/images/serachArrow.png" />
+                        <p>Name Space</p>
+                        <img class="arrow-img" src="../../../assets/images/serachArrow.png" />
+                        <p>New Task</p>
+                    </div>
+                    <hr>
+                    <div class="tasks row">
+                        <div class="col-lg-6 task-creation my-3">
+                            <p>Name Task</p>
+                            <input type="text" placeholder="Name Text" />
+                            <p class="mt-4">Description Task</p>
+                            <textarea cols="30" rows="5" placeholder="Description Task"></textarea>
+                            <p class="my-4">Sub Tasks ToDo</p>
+                            <div class="col-lg-12 row sub-task">
+                                <div class="col-lg-4 my-auto">
+                                    <input type="text" placeholder="Type Sub Task" />
+                                </div>
+                                <div class="col-lg-8 my-auto row">
+                                    <img class="my-auto round-img" src="../../../assets/images/flag.png" />
+                                    <img class="my-auto round-img" src="../../../assets/images/attachments.png" />
+                                    <img class="my-auto round-img" src="../../../assets/images/clock.png" />
+                                    <img class="my-auto round-img" src="../../../assets/images/Avatar3.png" />
+                                    <button class="btn-save">Save</button>
+                                </div>
+                            </div>
+                            <button style="    font-size: 10px;
+                            margin-top: 20px;" class="btn-save">Add Task</button>
+                            <hr />
+                            <div class="attachments">
+                                <div class="d-flex justify-content-between">
+                                    <p class="my-auto" style="font-size: 14px;">Attachments</p>
+                                    <div class="my-auto downloads d-flex">
+                                        <img style="width: 30px;" class="my-auto round-img"
+                                            src="../../../assets/images/apps.png" />
+                                        <img style="width: 20px;" class="my-auto round-img"
+                                            src="../../../assets/images/downlines.png" />
+                                        <img style="width: 30px;" class="my-auto round-img"
+                                            src="../../../assets/images/download.png" />
+                                        <p class=" my-auto">Download All</p>
+                                    </div>
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-lg-3 text-center">
+                                        <div class="frame-img">
+                                            <img class="w-100" src="../../../assets/images/frame1.png" />
+                                            <img style="margin-top: -40px;"
+                                                src="../../../assets/images/greenavatar.png" />
+                                            <p class="mx-auto mt-4">Frame6.jpg</p>
+                                            <p style="color: #7D8FB3;" class="mx-auto">Sep 7 at 2:42 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 text-center">
+                                        <div class="frame-img">
+                                            <img class="w-100" src="../../../assets/images/frame2.png" />
+                                            <img style="margin-top: -40px;"
+                                                src="../../../assets/images/greenavatar2.png" />
+                                            <p class="mx-auto mt-4">Change.pdf</p>
+                                            <p style="color: #7D8FB3;" class="mx-auto">Sep 7 at 2:42 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 text-center">
+                                        <div class="frame-img">
+                                            <img class="w-100" src="../../../assets/images/frame3.png" />
+                                            <img style="margin-top: -40px;"
+                                                src="../../../assets/images/greenavatar3.png" />
+                                            <p class="mx-auto mt-4">Readme.doc</p>
+                                            <p style="color: #7D8FB3;" class="mx-auto">Sep 7 at 2:42 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 text-center">
+                                        <div class="frame-img">
+                                            <img class="w-100" src="../../../assets/images/frame4.png" />
+                                            <img style="margin-top: -40px;"
+                                                src="../../../assets/images/greenavatar4.png" />
+                                            <p class="mx-auto mt-4">Readme.doc</p>
+                                            <p style="color: #7D8FB3;" class="mx-auto">Sep 7 at 2:42 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            Lakhani
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

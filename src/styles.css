@@ -1,1 +1,157 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+:root {
+    --navbar-primaryTextColor: #3D474D;
+    --auth-screens-text-color: #000000;
+    --dashboardNavBarItemsColor: #7D8FB3
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    padding: 30px 80px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 16px;
+    color: var(--navbar-primaryTextColor);
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: 4px solid #F4711E;
+    opacity: 0.9;
+}
+
+.language {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--navbar-primaryTextColor);
+}
+
+.demobtn {
+    margin: auto 0;
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #FF9002;
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.demobtn:hover {
+    background-color: #FF9002;
+    color: #fff;
+}
+
+.auth-heading {
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--auth-screens-text-color);
+}
+
+.sub-head {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--auth-screens-text-color);
+}
+
+.desc span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4D47C3;
+    cursor: pointer;
+}
+
+.signin-head {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.custom-input {
+    background: #FFF7ED;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    outline: none;
+    color: #FAB777;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.signup-input {
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+.custom-input::placeholder {
+    color: #FAB777;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.forgotpswd {
+    color: #B0B0B0;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 17px 0;
+    border: unset;
+    border-radius: 10px;
+    background: #F4711E;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.continue-txt {
+    color: #B0B0B0;
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.social-logins {
+    justify-content: center;
+}
+
+.social-logins img {
+    width: 30px;
+    margin: 0 5px;
+}
