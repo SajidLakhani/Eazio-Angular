@@ -195,3 +195,24 @@ hr {
     color: #fff;
     margin-left: 10px;
 }
+
+.activity {
+    border-left: 2px solid #edeff2;
+}
+
+.activity p {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #7D8FB3;
+    font-weight: bold;
+}
+
+.with-border {
+    border-right: 2px solid #edeff2;
+}
+
+.bottomBorder {
+    border-bottom: 2px solid #edeff2;
+    padding-bottom: 20px;
+}
