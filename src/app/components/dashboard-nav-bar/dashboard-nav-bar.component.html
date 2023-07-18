@@ -4,7 +4,7 @@
             <img class="round-img my-auto" src='../../../../assets/images/burger.png' />
             <img class="my-auto logo" src='../../../../assets/images/Logo.png' />
         </div>
-        <div class="col-lg-4 my-auto">
+        <div class="col-lg-4 col-md-6 my-auto">
             <ul class="my-auto nav-elements">
                 <li>Dashboard</li>
                 <li>About Us</li>
@@ -14,22 +14,22 @@
             </ul>
         </div>
         <div class="col-lg-1"></div>
-        <div class="position-relative col-lg-3 my-auto">
+        <div class="position-relative col-lg-3 col-md-4 my-auto">
             <img class="search-icon" src="../../../assets/images/search.png" />
             <input class="search-field" placeholder="Search Transactions and Documents" />
             <img class="search-arrow-icon" src="../../../assets/images/serachArrow.png" />
         </div>
-        <div class="col-lg-2 my-auto d-flex justify-content-end">
+        <div class="col-lg-2 col-md-2 my-auto d-flex justify-content-end">
             <div class="d-flex my-auto">
                 <img src="../../../assets/images/Icon.png" class="my-auto" />
-                <p class="user-name my-auto">Alfred Bryant</p>
+                <p class="user-name my-auto">{{name}}</p>
             </div>
             <img class="round-img my-auto" src='../../../../assets/images/Notification.png' />
             <img class="round-img my-auto" src='../../../../assets/images/Button.png' />
         </div>
     </div>
     <div class="side-nav-bar row">
-        <div class="col-lg-1 mt-2">
+        <div class="col-lg-1 mt-2 position-relative">
             <div>
                 <img class="round-img my-2" src="../../../assets/images/location.png" />
                 <br />
@@ -43,7 +43,7 @@
                 <br />
                 <img class="round-img my-2" src="../../../assets/images/building.png" />
             </div>
-            <div>
+            <div class="position-absolute fixed-bottom" style="left: 10px;">
                 <img class="round-img my-2" src="../../../assets/images/Avatar1.png" />
                 <br />
                 <img class="round-img my-2" src="../../../assets/images/Avatar2.png" />
@@ -57,24 +57,17 @@
         </div>
         <div class="col-lg-11 content-scetion">
             <div class="row">
-                <div class="col-lg-3 p-5 text-center">
+                <div class="position-relative col-lg-3 p-5 text-center">
                     <div class="d-flex justify-content-between">
                         <img class="round-img my-2" src="../../../assets/images/person.png" />
                         <img class="round-img my-2" src="../../../assets/images/dots.png" />
                     </div>
                     <div class="user-section">
                         <img style="width: 150px;" src="../../../assets/images/User.png" />
-                        <p class="user-name">Hello Alfred Bryant</p>
-                        <p class="user-email">adrain.nader@yahoo.com</p>
+                        <p class="user-name">Hello {{name}}</p>
+                        <p class="user-email">{{email}}</p>
                     </div>
                     <div class="options d-flex flex-wrap">
-                        <!-- <img src="../../../assets/images/1.png" />
-                        <img class="active" src="../../../assets/images/2.png" />
-                        <img src="../../../assets/images/3.png" />
-                        <img src="../../../assets/images/4.png" />
-                        <img src="../../../assets/images/5.png" />
-                        <img src="../../../assets/images/1.png" />
-                        <img src="../../../assets/images/2.png" /> -->
                         <ul class="d-flex flex-wrap position-relative mt-4">
                             <li [ngClass]="{'active': activeElement === 1}" (click)="setActiveElement(1)">
                                 <img src="../../../assets/images/dashboard.png" />
@@ -143,6 +136,9 @@
                                 margin-top: 10px;">Settings</p>
                             </li>
                         </ul>
+                    </div>
+                    <div style="bottom: 40px; text-align: center; left: 0; right: 0;" class="position-absolute">
+                        <img src="../../../assets/images/socials.png" />
                     </div>
                 </div>
                 <div class="col-lg-9 main-content">
@@ -331,14 +327,43 @@
                                 </div>
                             </div>
                             <div class="comments-section">
-                                <p class="my-3 mx-2">Comments</p>
-                                <div class="row">
+                                <p style="color: #4D5E80;
+    font-size: 14px;" class="my-3 mx-2">Comments</p>
+                                <div class="row mt-5">
                                     <div class="col-lg-1">
                                         <img width="30px" src="../../../assets/images/Avatar2.png" />
                                     </div>
-                                    <div class="col-lg-11">
-                                        Sajid
+                                    <div class="col-lg-11 mb-5">
+                                        <div class="sub-task row py-3 px-3">
+                                            <div class="col-lg-9">
+                                                <p style="color: #ADB8CC;"><span
+                                                        style="color: #4D5E80; margin-right: 10px;">You</span>
+                                                    Commented</p>
+                                                <p class="mt-3" style="color: #6B7A99;">Internet Advertising What Went
+                                                    Wrong</p>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                Just Now
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <hr class="my-5" />
+                            </div>
+                            <div class="add-comment row">
+                                <div class="col-lg-9 my-auto">
+                                    <input style="    width: 100%;
+                                    border: none;
+                                    font-size: 12px;
+                                    padding: 10px 20px;
+                                    outline: none;
+                                    color: #6B7A99;" type="text" placeholder="Comment on Task" />
+                                </div>
+                                <div class="col-lg-3">
+                                    <button class="btn-save"
+                                        style="width: 100%;padding: 12px 0;font-size: 12px; font-weight: bold;">
+                                        Comment
+                                    </button>
                                 </div>
                             </div>
                         </div>

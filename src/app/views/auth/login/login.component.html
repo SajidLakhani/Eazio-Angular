@@ -1,47 +1,37 @@
 <div class="main">
-    <div class="header d-flex justify-content-between">
-        <div class="col-lg-3">
-            <img class="my-auto" src='../../../../assets/images/Logo.png' />
-        </div>
-        <div class="col-lg-4 my-auto">
-            <ul class="my-auto">
-                <li class="active">Home</li>
-                <li>Careers</li>
-                <li>Pricing</li>
-                <li>Features</li>
-            </ul>
-        </div>
-        <div class="col-lg-4 my-auto d-flex justify-content-end">
-            <div class="d-flex gap-2">
-                <img class="my-auto" src="../../../../assets/images/globe.png" />
-                <p class="my-auto language">English</p>
-                <img class="my-auto" src="../../../../assets/images/arrowDown.png" />
-            </div>
-            <img class="my-auto mx-4" src="../../../../assets/images/Divider.png" />
-            <p class="my-auto language">Login</p>
-            <button class="demobtn">Get Demo</button>
-        </div>
-    </div>
+    <app-auth-navbar></app-auth-navbar>
     <!-- section for signin -->
-    <div class="d-flex" style="width: 80%;margin: 80px auto;">
+    <div class="d-flex form-section">
         <div class="col-lg-8 my-auto">
-            <h1 class="auth-heading">Sign in to </h1>
-            <h2 class="sub-head">Lorem Ipsum is simply</h2>
-            <p class="desc">If you don’t have an account register<br />You can <span (click)="toSignUp()">Register here
-                    !</span></p>
+            <app-auth-left-side [signUp]="false"></app-auth-left-side>
         </div>
+
         <div class="col-lg-4">
-            <h3 class="signin-head">Sign in</h3>
-            <input class="custom-input" type="text" placeholder="Enter email or user name" />
-            <input class="custom-input" type="password" placeholder="Password" />
-            <p class="forgotpswd">Forgot password ?</p>
-            <button class="submit-btn">Login</button>
-            <p class="continue-txt">or continue with</p>
-            <div class="d-flex social-logins">
-                <img src="../../../../assets/images/Facebook.png" />
-                <img src="../../../../assets/images/apple.png" />
-                <img src="../../../../assets/images/google.png" />
-            </div>
+            <form [formGroup]="loginForm">
+                <h3 class="signin-head">Sign in</h3>
+                <input formControlName="email" class="custom-input" type="text"
+                    placeholder="Enter email or user name" />
+                <div *ngIf="submitted && f.email.errors" class="text-danger">
+                    <div *ngIf="f.email?.errors?.['required']">
+                        Email or user name is required
+                    </div>
+                </div>
+                <input formControlName="password" class="custom-input" type="password" placeholder="Password" />
+                <div *ngIf="submitted && f.password.errors" class="text-danger">
+                    <div *ngIf="f.password?.errors?.['required']">
+                        Password is required
+                    </div>
+                </div>
+                <p class="forgotpswd">Forgot password ?</p>
+                <button (click)="submit()" class="submit-btn">Login</button>
+                <p class="continue-txt">or continue with</p>
+                <div class="d-flex social-logins">
+                    <img src="../../../../assets/images/Facebook.png" />
+                    <img src="../../../../assets/images/apple.png" />
+                    <img src="../../../../assets/images/google.png" />
+                </div>
+            </form>
         </div>
+
     </div>
 </div>

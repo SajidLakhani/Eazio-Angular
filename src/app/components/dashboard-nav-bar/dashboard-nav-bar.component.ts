@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard-nav-bar.component.css'],
 })
 export class DashboardNavBarComponent {
+  public name = localStorage.getItem('name');
+  public email = localStorage.getItem('email');
+
   activeElement: number = 2;
   setActiveElement(element: number) {
     this.activeElement = element;
