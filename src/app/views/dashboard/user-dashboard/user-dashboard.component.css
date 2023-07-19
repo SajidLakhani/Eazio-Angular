@@ -10,3 +10,31 @@
 .attachments p {
     font-size: 14px;
 }
+
+.add-comment input {
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    padding: 10px 20px;
+    outline: none;
+    color: #6B7A99;
+}
+
+.add-comment button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dates p {
+    color: #4D5E80
+}
+
+.bottomBorder p {
+    color: #4D5E80
+}
+
+.bottomBorder span {
+    color: #3361FF
+}
