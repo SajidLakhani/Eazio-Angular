@@ -1,0 +1,82 @@
+<div class="d-flex justify-content-between">
+    <img class="round-img my-2" src="../../../assets/images/person.png" />
+    <img class="round-img my-2" src="../../../assets/images/dots.png" />
+</div>
+<div class="user-section">
+    <img style="width: 150px;" src="../../../assets/images/User.png" />
+    <p class="user-name">Hello {{name}}</p>
+    <p class="user-email">{{email}}</p>
+</div>
+<div class="options d-flex flex-wrap">
+    <ul class="d-flex flex-wrap position-relative mt-4">
+        <li [ngClass]="{'active': activeElement === 1}" (click)="setActiveElement(1)">
+            <img src="../../../assets/images/dashboard.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Dashboard</p>
+        </li>
+        <!-- <li><img src="../../../assets/images/1.png" /></li>
+        <li><img src="../../../assets/images/2.png" /></li> -->
+        <li [ngClass]="{'active': activeElement === 2}" (click)="setActiveElement(2)">
+            <img src="../../../assets/images/task.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Tasks</p>
+        </li>
+        <li [ngClass]="{'active': activeElement === 3}" (click)="setActiveElement(3)"> <img
+                src="../../../assets/images/invoice.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Invoice</p>
+        </li>
+        <li [ngClass]="{'active': activeElement === 4}" (click)="setActiveElement(4)">
+            <img src="../../../assets/images/teams.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Teams</p>
+        </li>
+        <li [ngClass]="{'active': activeElement === 5}" (click)="setActiveElement(5)">
+            <img src="../../../assets/images/files.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Files</p>
+        </li>
+        <li [ngClass]="{'active': activeElement === 6}" (click)="setActiveElement(6)">
+            <img src="../../../assets/images/events.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Events</p>
+        </li>
+        <li [ngClass]="{'active': activeElement === 7}" (click)="setActiveElement(7)">
+            <img src="../../../assets/images/message.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Message</p>
+        </li>
+        <li [ngClass]="{'active': activeElement === 8}" (click)="setActiveElement(8)">
+            <img src="../../../assets/images/settings.png" />
+            <p style="    padding: 0;
+            margin: auto;
+            font-size: 12px;
+            color: #ADB8CC;
+            margin-top: 10px;">Settings</p>
+        </li>
+    </ul>
+</div>
+<div style="bottom: 40px; text-align: center; left: 0; right: 0;" class="position-absolute">
+    <img src="../../../assets/images/socials.png" />
+</div>
